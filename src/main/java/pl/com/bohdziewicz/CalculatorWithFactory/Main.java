@@ -11,8 +11,11 @@ public class Main {
     System.out.println(
         "I wonder how many there are two add two\n... It' so hard to solve - let's use java, computers"
             + " and more...");
+    System.out.println("\n\nUsing factory:");
     System.out.println(calculator.calulateUsingFactory(2, 2, "add"));
     System.out.println("And using Enum...");
     System.out.println(calculator.calculate(2,2, Operator.ADD));
+    System.out.println("And using command...");
+    System.out.println(calculator.calculateWithCommand(new AddCommand(2,2)));
   }
 }

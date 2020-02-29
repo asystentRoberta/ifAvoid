@@ -12,4 +12,8 @@ class Calculator {
   int calculate(int a, int b, Operator operator) {
     return operator.apply(a, b);
   }
+
+  int calculateWithCommand(Command command){
+    return command.execute();
+  }
 }

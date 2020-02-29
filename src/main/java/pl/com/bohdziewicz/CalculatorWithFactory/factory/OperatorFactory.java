@@ -1,10 +1,10 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.factory;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-class OperatorFactory {
+public class OperatorFactory {
 
   private static Map<String, Operation> operationMap = new HashMap<>();
 
@@ -14,7 +14,7 @@ class OperatorFactory {
     // and so on...
   }
 
-  static Optional<Operation> getOperation(String operator) {
+  public static Optional<Operation> getOperation(String operator) {
     return Optional.ofNullable(operationMap.get(operator));
   }
 }

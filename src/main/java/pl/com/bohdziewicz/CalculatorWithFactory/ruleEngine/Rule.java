@@ -1,4 +1,4 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine;
 
 public interface Rule {
 

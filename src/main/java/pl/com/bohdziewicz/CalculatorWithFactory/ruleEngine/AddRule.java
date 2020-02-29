@@ -1,4 +1,6 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine;
+
+import pl.com.bohdziewicz.CalculatorWithFactory.enums.Operator;
 
 public class AddRule implements Rule {
 

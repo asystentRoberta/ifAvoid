@@ -1,4 +1,6 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine;
+
+import pl.com.bohdziewicz.CalculatorWithFactory.enums.Operator;
 
 public class DivideRule implements Rule {
 
@@ -9,7 +11,8 @@ public class DivideRule implements Rule {
 
     boolean evalResult = false;
     if (expression.getOperator() == Operator.DIVIDE) {
-      if(expression.getY()==0) throw new IllegalArgumentException("Argument 'divisor' can't be zero.");
+      if (expression.getY() == 0)
+        throw new IllegalArgumentException("Argument 'divisor' can't be zero.");
       this.result = expression.getX() / expression.getY();
       evalResult = true;
     }

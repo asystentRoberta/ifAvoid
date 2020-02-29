@@ -1,9 +1,9 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class RuleEngine {
+public class RuleEngine {
 
   private static List<Rule> rules = new ArrayList<>();
 
@@ -12,7 +12,7 @@ class RuleEngine {
     rules.add(new DivideRule());
   }
 
-  Result process(Expression expression) {
+  public Result process(Expression expression) {
     Rule rule =
         rules.stream()
             .filter(rule1 -> rule1.evaluete(expression))

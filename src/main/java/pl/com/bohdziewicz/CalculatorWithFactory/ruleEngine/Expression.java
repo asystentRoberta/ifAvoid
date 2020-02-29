@@ -1,12 +1,14 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine;
 
-class Expression {
+import pl.com.bohdziewicz.CalculatorWithFactory.enums.Operator;
+
+public class Expression {
 
   private Integer x;
   private Integer y;
   private Operator operator;
 
-  Expression(Integer x, Integer y, Operator operator) {
+  public Expression(Integer x, Integer y, Operator operator) {
     this.x = x;
     this.y = y;
     this.operator = operator;

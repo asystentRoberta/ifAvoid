@@ -1,5 +1,11 @@
 package pl.com.bohdziewicz.CalculatorWithFactory;
 
+import pl.com.bohdziewicz.CalculatorWithFactory.commapndPattern.AddCommand;
+import pl.com.bohdziewicz.CalculatorWithFactory.enums.Operator;
+import pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine.Expression;
+import pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine.Result;
+import pl.com.bohdziewicz.CalculatorWithFactory.ruleEngine.RuleEngine;
+
 public class Main {
 
   public static void main(String[] args) {
@@ -27,9 +33,5 @@ public class Main {
     Expression expression1 = new Expression(10, 2, Operator.DIVIDE);
     result = ruleEngine.process(expression1);
     System.out.println(result.getValue());
-    System.out.println("And with 0");
-    Expression expression2 = new Expression(10, 0, Operator.DIVIDE);
-    result = ruleEngine.process(expression2);
-    System.out.println(result);
   }
 }

@@ -1,5 +1,10 @@
 package pl.com.bohdziewicz.CalculatorWithFactory;
 
+import pl.com.bohdziewicz.CalculatorWithFactory.commapndPattern.Command;
+import pl.com.bohdziewicz.CalculatorWithFactory.enums.Operator;
+import pl.com.bohdziewicz.CalculatorWithFactory.factory.Operation;
+import pl.com.bohdziewicz.CalculatorWithFactory.factory.OperatorFactory;
+
 class Calculator {
 
   int calulateUsingFactory(int a, int b, String operator) {

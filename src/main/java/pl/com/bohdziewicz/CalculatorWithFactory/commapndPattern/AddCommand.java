@@ -1,11 +1,13 @@
-package pl.com.bohdziewicz.CalculatorWithFactory;
+package pl.com.bohdziewicz.CalculatorWithFactory.commapndPattern;
+
+import pl.com.bohdziewicz.CalculatorWithFactory.commapndPattern.Command;
 
 public class AddCommand implements Command {
 
   private int a;
   private int b;
 
-  AddCommand(int a, int b) {
+  public AddCommand(int a, int b) {
     this.a = a;
     this.b = b;
   }

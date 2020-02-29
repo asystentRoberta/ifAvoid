@@ -14,8 +14,14 @@ public class Main {
     System.out.println("\n\nUsing factory:");
     System.out.println(calculator.calulateUsingFactory(2, 2, "add"));
     System.out.println("And using Enum...");
-    System.out.println(calculator.calculate(2,2, Operator.ADD));
+    System.out.println(calculator.calculate(2, 2, Operator.ADD));
     System.out.println("And using command...");
-    System.out.println(calculator.calculateWithCommand(new AddCommand(2,2)));
+    System.out.println(calculator.calculateWithCommand(new AddCommand(2, 2)));
+
+    System.out.println("Not quite clear to me");
+    Expression expression = new Expression(2,2, Operator.ADD);
+    RuleEngine ruleEngine = new RuleEngine();
+    Result result = ruleEngine.process(expression);
+    System.out.println(result.getValue());
   }
 }

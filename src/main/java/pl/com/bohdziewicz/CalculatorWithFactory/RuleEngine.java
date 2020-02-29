@@ -9,6 +9,7 @@ class RuleEngine {
 
   static {
     rules.add(new AddRule());
+    rules.add(new DivideRule());
   }
 
   Result process(Expression expression) {

@@ -19,9 +19,17 @@ public class Main {
     System.out.println(calculator.calculateWithCommand(new AddCommand(2, 2)));
 
     System.out.println("Not quite clear to me");
-    Expression expression = new Expression(2,2, Operator.ADD);
+    Expression expression = new Expression(2, 2, Operator.ADD);
     RuleEngine ruleEngine = new RuleEngine();
     Result result = ruleEngine.process(expression);
     System.out.println(result.getValue());
+    System.out.println("And divide without 0:");
+    Expression expression1 = new Expression(10, 2, Operator.DIVIDE);
+    result = ruleEngine.process(expression1);
+    System.out.println(result.getValue());
+    System.out.println("And with 0");
+    Expression expression2 = new Expression(10, 0, Operator.DIVIDE);
+    result = ruleEngine.process(expression2);
+    System.out.println(result);
   }
 }

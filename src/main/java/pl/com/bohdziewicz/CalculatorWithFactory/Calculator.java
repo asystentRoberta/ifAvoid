@@ -8,4 +8,8 @@ class Calculator {
             .orElseThrow(() -> new IllegalArgumentException("Invalid " + "Operator"));
     return targetOperation.apply(a, b);
   }
+
+  int calculate(int a, int b, Operator operator) {
+    return operator.apply(a, b);
+  }
 }

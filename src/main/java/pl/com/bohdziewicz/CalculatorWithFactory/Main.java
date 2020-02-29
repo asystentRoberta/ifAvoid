@@ -12,5 +12,7 @@ public class Main {
         "I wonder how many there are two add two\n... It' so hard to solve - let's use java, computers"
             + " and more...");
     System.out.println(calculator.calulateUsingFactory(2, 2, "add"));
+    System.out.println("And using Enum...");
+    System.out.println(calculator.calculate(2,2, Operator.ADD));
   }
 }
